@@ -8,7 +8,7 @@ const HomeScreen: React.FC = () => {
   return (
     <View>
       <Text>Home Page</Text>
-      <Button title="SOS" onPress={() => { /* SOS button action */ }} />
+      <Button title="SOS" onPress={() => { }} />
       <Button title="Menu" onPress={() => navigation.navigate('Menu')} />
     </View>
   );

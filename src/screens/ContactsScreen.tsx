@@ -19,9 +19,8 @@ const ContactsScreen: React.FC = () => {
   const handleAddContact = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (status === 'granted') {
-      // Open phone gallery and select users
-      // Example code for adding selected contacts to Firebase DB
-      const selectedUsers = []; // Replace with actual selected users
+     
+      const selectedUsers = []; 
       for (const user of selectedUsers) {
         await addDoc(collection(firestore, 'contacts'), {
           userId: auth.currentUser?.uid,
